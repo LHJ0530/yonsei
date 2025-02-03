@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 및 회원가입</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.login-box {
+    background: #ddd;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: left;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    width: 50px;
+    font-weight: bold;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login-btn {
+    padding: 8px 15px;
+    background: white;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.signup-link {
+    display: block;
+    text-align: right;
+    margin-top: 10px;
+    color: black;
+    text-decoration: none;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>회원가입/로그인</h1>
+        <div class="login-box">
+            <form>
+                <div class="input-group">
+                    <label for="id">ID</label>
+                    <input type="text" id="id" placeholder="아이디 입력">
+                </div>
+                <div class="input-group">
+                    <label for="pw">PW</label>
+                    <input type="password" id="pw" placeholder="비밀번호 입력">
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="login-btn">로그인</button>
+                </div>
+            </form>
+            <a href="#" class="signup-link">회원가입</a>
+        </div>
+    </div>
+</body>
+</html>
